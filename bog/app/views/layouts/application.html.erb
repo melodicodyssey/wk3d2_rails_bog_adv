@@ -5,17 +5,18 @@
   <%= stylesheet_link_tag    "application", media: "all", "data-turbolinks-track" => true %>
   <%= javascript_include_tag "application", "data-turbolinks-track" => true %>
   <%= csrf_meta_tags %>
+  <link rel="stylesheet" type="text/css" href="/app/assets/stylesheets/bog.css">
 </head>
-<body style="background-image: url(http://good-wallpapers.com/wallpapers/18281/Bog.jpg)">
+<body style="background-image: url('http://good-wallpapers.com/wallpapers/18281/Bog.jpg')">
 
 	 <div class="navbar navbar-default" role="navigation" style= "background-color: black">
         <div class="navbar-header">
-         <!--  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-            <span class="sr-only">Toggle navigation</span>
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+<!--             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </button> -->
+            <span class="icon-bar"></span> -->
+          </button>
           <a class="navbar-brand" href="/">Midgewater Marsh Wetlands Preserve</a>
         </div>
 <!--         <div class="navbar-collapse collapse">
@@ -28,10 +29,9 @@
             <li class="active"><a href="./">Default</a></li>
             <li><a href="../navbar-static-top/">Static top</a></li>
             <li><a href="../navbar-fixed-top/">Fixed top</a></li>
-          </ul> -->
-        </div><!--/.nav-collapse -->
+          </ul>
+        </div> -->
       </div>
->
 
 <%= yield %>
 

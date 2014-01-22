@@ -4,12 +4,10 @@
 <div class="content">
 <% @bogs.each do |bog| %>
 	<div class="creatures">
-		<strong>Name:</strong> <%= bog[:name] %></br></br>
-		<strong>Description:</strong> <%= bog[:description] %></br>
+		<p class="creatures_text"><strong>Name:</strong> <%= bog[:name] %></p>
+		<p class="creatures_text"><strong>Description:</strong> <%= bog[:description] %></p>
 		<form action="bog/<%=bog[:id]%>" method="get">
-			<button class="divbutton">
-				<span class="glyphicon glyphicon-info-sign"></span>
-				</button>
+			<button class="divbutton">More Info</button>
 		</form>
 	</div>
 </br></br>

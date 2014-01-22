@@ -10,7 +10,7 @@
 	<button>Edit creature information</button>
 </form>
 </br>
-<form action="bog/<%=@creature.id%>" method="POST">
+<form action="/bog/<%=@creature.id%>" method="POST">
 <input type="hidden" name="_method" value="delete">
 <%= token_tag form_authenticity_token %>
 <button class="delete_button">Remove creature from database</button>

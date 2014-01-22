@@ -3,7 +3,6 @@ Bog::Application.routes.draw do
   root to: "bogs#index"
   # index displays all creatures
 
-
   # route to input new info
   get "/bog/new", to: "bogs#new"
 

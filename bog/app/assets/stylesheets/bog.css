@@ -11,7 +11,7 @@
 	border: 2px solid white;
 	border-radius: 15px;
 	background-color: rgba(0,0,0,8);
-	opacity: 0.7;
+	opacity: 0.4;
 	color: white;
 	text-align: center;
 	width: 50%;
@@ -19,8 +19,13 @@
 	padding: 20px;
 }
 
+.creatures_text {
+	opacity: 1;
+}
+
 .divbutton {
-	opacity: 1;margin: 10px;
+	opacity: 1;
+	margin: 10px;
 }
 
 .textbox {
