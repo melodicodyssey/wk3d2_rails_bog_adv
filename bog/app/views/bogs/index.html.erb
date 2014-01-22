@@ -1,0 +1,22 @@
+<!-- Form to view all creatures + MENU -->
+
+<center>
+<div class="content">
+<% @bogs.each do |bog| %>
+	<div class="creatures">
+		<strong>Name:</strong> <%= bog[:name] %></br></br>
+		<strong>Description:</strong> <%= bog[:description] %></br>
+		<form action="bog/<%=bog[:id]%>" method="get">
+			<button class="divbutton">
+				<span class="glyphicon glyphicon-info-sign"></span>
+				</button>
+		</form>
+	</div>
+</br></br>
+<% end %>
+</br>
+<form action="/bog/new" method="get">
+	<input type="submit" value="Report new creature sighting">
+</form>
+</div>
+</center>

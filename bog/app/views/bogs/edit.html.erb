@@ -1,0 +1,19 @@
+<!-- Edit creature information -->
+
+<form action="/bog/<%=@creature.id%>" method="POST">
+<input type="hidden" name="_method" value="put">
+	<label><strong>Update fields</strong></label>
+	</br></br>
+	<label>Name:</label>
+	</br>
+	<input type="text" name="bog[name]" value="<%=@creature.name%>">
+	</br></br>
+	<label>Description</label>
+	</br>
+	<textarea name="bog[description]"><%=@creature.description%></textarea>
+	</br>
+	<!-- authenticity tag -->
+	<%= token_tag form_authenticity_token %>
+	
+	<button>Update</button>
+</form>

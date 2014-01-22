@@ -1,0 +1,36 @@
+/*background image: http://good-wallpapers.com/wallpapers/18281/Bog.jpg  */
+
+.content {
+	margin-top: 30px;
+	background-color: rgba(0,0,0,2);
+	opacity: 0.8;
+	padding: 20px;
+}
+
+.creatures {
+	border: 2px solid white;
+	border-radius: 15px;
+	background-color: rgba(0,0,0,8);
+	opacity: 0.7;
+	color: white;
+	text-align: center;
+	width: 50%;
+	margin: 0 auto;
+	padding: 20px;
+}
+
+.divbutton {
+	opacity: 1;margin: 10px;
+}
+
+.textbox {
+	padding: 5px;
+}
+
+label {
+	color: white;
+}
+
+.footer {
+	margin: 50px;
+}

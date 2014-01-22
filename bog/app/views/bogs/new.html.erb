@@ -1,0 +1,14 @@
+<!-- Form to create new creature -->
+
+<div class="creatures">
+<form action="/bogs" method="POST">
+	<label>Name:</label></br>
+	<input class="textbox" type="text" name="bog[name]" placeholder="Type creature name here"></br></br>
+	<label>Description:</label></br>
+	<textarea class="textbox" name="bog[description]" placeholder="Type creature description here"></textarea></br></br>
+	<!-- authenticity tag -->
+	<%= token_tag form_authenticity_token %>
+
+	<button>Report</button>
+</form>
+</div>
