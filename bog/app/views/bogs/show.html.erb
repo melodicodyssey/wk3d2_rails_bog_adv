@@ -1,19 +1,20 @@
 <!--Form to view or edit one creature -->
 <div class="content">
 <div class="creatures">
-<label>Creature name:</label></br></br>
-<%= @creature.name %></br>
-<label>Creature description:</label></br></br>
+<label>Creature name:</label></br>
+<%= @creature.name %></br></br>
+<label>Creature description:</label></br>
 <%= @creature.description %></br></br>
 
 <form action="/bog/<%=@creature.id%>/edit" method="GET">
 	<button>Edit creature information</button>
 </form>
 </br>
+
 <form action="/bog/<%=@creature.id%>" method="POST">
-<input type="hidden" name="_method" value="delete">
-<%= token_tag form_authenticity_token %>
-<button class="delete_button">Remove creature from database</button>
+	<input type="hidden" name="_method" value="delete">
+	<%= token_tag form_authenticity_token %>
+	<button class="delete_button">Remove creature from database</button>
 </form>
 </br></br>
 <!-- <form action="/" method="get"> -->
